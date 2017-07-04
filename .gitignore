@@ -7,8 +7,4 @@ db.sqlite3
 jefwillems/__pycache__/
 main/__pycache__/
 main/migrations/
-static/rest_framework/
-static/admin/
-templates/
-static/rest_framework/docs/img/
-static/rest_framework/fonts/glyphicons-halflings-regular.woff
+/static/
