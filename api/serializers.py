@@ -19,4 +19,4 @@ class GroupSerializer(serializers.HyperlinkedModelSerializer):
 class PostSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Post
-        fields = ('id', 'title', 'text', 'author', 'date_created', 'published')
+        fields = ('id', 'title', 'text', 'author', 'date_created', 'published', 'url')

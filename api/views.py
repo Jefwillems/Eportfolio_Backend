@@ -1,5 +1,6 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
+from django.shortcuts import redirect
 
 from api.models import Post
 from .serializers import UserSerializer, GroupSerializer, PostSerializer
@@ -24,3 +25,7 @@ class GroupViewSet(viewsets.ModelViewSet):
 class PostViewSet(viewsets.ModelViewSet):
     queryset = Post.objects.all()
     serializer_class = PostSerializer
+
+
+def error404(request):
+    return redirect('/api')
